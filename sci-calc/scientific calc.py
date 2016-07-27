@@ -6,9 +6,11 @@ app = QtGui.QApplication(sys.argv)
 l=''
 p=''
 w=QtGui.QMainWindow()
+w.setWindowIcon(QtGui.QIcon('n.png'))
 w.setGeometry(50,50,245,300)
 w.setFixedSize(245,300)
-w.setWindowTitle('calc')
+w.setWindowTitle('calculator')
+
 tbox=QtGui.QTextEdit(w)
 tbox.setGeometry(5,5,235,50)
 tbox.setReadOnly(True)
