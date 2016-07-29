@@ -3,7 +3,7 @@ import math
 class calculator:
     def calculate(exp):
         value=''
-        print("print expression")
+        
         def prec(t,o):
             d={'(':10,'$':5,'i':5,'_':5,'!':5,'p':5,'s':5,'^':5,'t':5,'u':5,'v':5,'w':5,'x':5,'y':5,'z':5,'/':4,'*':4,'+':2,'-':2}
             if(d[t]>=d[o]):
@@ -12,9 +12,7 @@ class calculator:
                     return False
         try:
             var=exp
-            f=var.find(" ")
-            if(f!= -1):
-                print("remove blank spaces ")
+            
             s=stack()
             post=''
             for l in var:
@@ -42,7 +40,7 @@ class calculator:
                 post=post+ s.pop()
             post=post+' '
             post=(post.split())
-            print(post)
+            
             
             l=stack()
             r=''
@@ -130,9 +128,9 @@ class calculator:
                         b=float(l.pop())
                         r=float(math.factorial(b)/(math.factorial(b-k)* math.factorial(k)))
                         l.push(r)
-            l.printstk()
+            
             value=l.pop()
-            print(value)
+            
             return str(value)
         
 

@@ -135,11 +135,9 @@ def bdel():
                     l=l[0:len(l)-1]
                     print(l)
                 p=p[0:len(p)-1]
-        print(p,l)
     else:
         l=l[0:len(l)-1]
         p=p[0:len(p)-1]
-        print(p,l)
     print("del")
     tbox.setText(l)
 def obrac():
