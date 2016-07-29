@@ -111,9 +111,10 @@ def beq():
     
     print("=")
     p=calcc.calculate(p)
+    
+    tbox.setText(l+"\n"+"="+" "+p)
     l=p
-    tbox.setText(l)
-    l=(l)
+    
     print(l)
 def bAC():
     global tbox,l,p
